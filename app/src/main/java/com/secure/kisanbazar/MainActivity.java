@@ -1,11 +1,13 @@
 package com.secure.kisanbazar;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
     private static  int TIME_OUT = 4000;
@@ -14,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final View mainLayout = findViewById(R.id.startScreen);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.activity_toolbar);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
