@@ -9,7 +9,12 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".toolbar"></activity>
+        <activity android:name=".error"></activity>
+        <activity android:name=".somethingwentwrong" />
+        <activity android:name=".registertrader" />
+        <activity android:name=".registerfarmer" />
+        <activity android:name=".logintrader" />
+        <activity android:name=".toolbar" />
         <activity android:name=".login" />
         <activity android:name=".MainActivity">
             <intent-filter>
